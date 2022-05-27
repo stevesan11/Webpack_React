@@ -1,0 +1,60 @@
+{
+	"name": "webpack_react",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "webpack-dev-server --config ./webpack.dev.js",
+		"dev": " webpack --config ./webpack.dev.js",
+		"build": "webpack --config ./webpack.prod.js",
+		"lint": "eslint src && prettier --write src",
+		"lint:fix": "eslint --fix src && prettier --write src"
+	},
+	"browserslist": [
+		"defaults",
+		"not IE 11"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.18.2",
+		"@babel/preset-env": "^7.18.2",
+		"@babel/preset-react": "^7.17.12",
+		"@babel/preset-typescript": "^7.17.12",
+		"@svgr/webpack": "^6.2.1",
+		"@typescript-eslint/eslint-plugin": "^5.26.0",
+		"@typescript-eslint/parser": "^5.26.0",
+		"autoprefixer": "^10.4.7",
+		"babel-loader": "^8.2.5",
+		"css-loader": "^6.7.1",
+		"css-minimizer-webpack-plugin": "^4.0.0",
+		"dotenv-webpack": "^7.1.0",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-react": "^7.30.0",
+		"eslint-plugin-react-hooks": "^4.5.0",
+		"eslint-webpack-plugin": "^3.1.1",
+		"html-loader": "^3.1.0",
+		"html-webpack-plugin": "^5.5.0",
+		"mini-css-extract-plugin": "^2.6.0",
+		"postcss": "^8.4.14",
+		"postcss-loader": "^7.0.0",
+		"prettier": "^2.6.2",
+		"tailwindcss": "^3.0.24",
+		"terser-webpack-plugin": "^5.3.1",
+		"typescript": "^4.7.2",
+		"webpack": "^5.72.1",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.9.0",
+		"webpack-merge": "^5.8.0"
+	},
+	"dependencies": {
+		"@types/react": "^18.0.9",
+		"@types/react-dom": "^18.0.5",
+		"@types/tailwindcss": "^3.0.10",
+		"core-js": "^3.22.7",
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0"
+	}
+}
