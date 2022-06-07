@@ -26,17 +26,19 @@ module.exports = {
 		"plugin:@typescript-eslint/recommended",
 		"prettier",
 	],
-	overrides: {
-		files: [
-			"**/__tests__/**/*.+(ts|tsx|js)",
-			"**/?(*.)+(spec|test).+(ts|tsx|js)",
-		],
-		extends: [
-			"plugin:jest/recommended",
-			"plugin:jest-dom/recommended",
-			"plugin:testing-library/react",
-		],
-	},
+	overrides: [
+		{
+			files: [
+				"**/__tests__/**/*.+(ts|tsx|js)",
+				"**/?(*.)+(spec|test).+(ts|tsx|js)",
+			],
+			extends: [
+				"plugin:jest/recommended",
+				"plugin:jest-dom/recommended",
+				"plugin:testing-library/react",
+			],
+		},
+	],
 	rules: {
 		indent: ["error", "tab", { SwitchCase: 1 }],
 		"linebreak-style": ["error", "unix"],
